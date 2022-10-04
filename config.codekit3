@@ -95,40 +95,40 @@
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/dev\/global\/footer.html",
-      "oF" : 0
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 2
     },
     "\/dev\/global\/head.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/global\/head.html",
-      "oF" : 0
+      "oA" : 0,
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 3
     },
     "\/dev\/global\/header.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/dev\/global\/header.html",
-      "oF" : 0
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 2
     },
     "\/dev\/global\/header.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/dev\/global\/header.html",
-      "oF" : 0
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 2
     },
     "\/dev\/global\/scripts.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/global\/scripts.html",
-      "oF" : 0
+      "oA" : 0,
+      "oAP" : "\/deploy\/js\/scripts-min.js",
+      "oF" : 3
     },
     "\/dev\/index.kit" : {
       "cB" : 0,
