@@ -1,0 +1,19 @@
+/* =============
+    hero
+============= */
+
+.hero-image {
+    background-image: url("../img/main-mtn.jpg");
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+
+    .hero-text {
+        display: flex;   
+        flex-direction: column;
+        align-items: center;   
+        justify-content: center;
+        text-align: center;
+        color: var(--white);
+}
+}
