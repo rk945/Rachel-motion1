@@ -10,14 +10,15 @@
 
     .hero-text {
         display: flex;   
-        flex-direction: column;
+        // flex-direction: column;
         align-items: center;   
         justify-content: center;
         text-align: center;
-        padding-top: 175px;
-        margin-left: 275px;
-        margin-right: 275px;
-        position: relative;
+        height: 100%;
+        // padding-top: 175px;
+        // margin-left: 275px;
+        // margin-right: 275px;
+        // position: relative;
         color: var(--white);
 
 

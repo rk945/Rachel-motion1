@@ -6,9 +6,14 @@
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 800;
-    font-size: 75px;
+    // font-size: 75px;
     line-height: 50px;
     margin-bottom: 20px;
+    font-size: rem-calc(37);
+
+    @include md{
+        font-size: rem-calc(75);
+    }
     
 }
 

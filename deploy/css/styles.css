@@ -335,9 +335,14 @@ template {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 75px;
   line-height: 50px;
   margin-bottom: 20px;
+  font-size: 2.3125rem;
+}
+@media (min-width: 768px) {
+  #header1 {
+    font-size: 4.6875rem;
+  }
 }
 
 #header2 {
@@ -407,13 +412,9 @@ textarea {
 }
 .hero-image .hero-text {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-top: 175px;
-  margin-left: 275px;
-  margin-right: 275px;
-  position: relative;
+  height: 100%;
   color: var(--white);
 }
