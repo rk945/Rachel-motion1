@@ -8,6 +8,15 @@
     background-size: cover;
     background-position: center;
 
+    @include md{
+        height: 70vh;
+    }
+
+
+    @include lg{
+        height: 80vh;
+    }
+
     .hero-text {
         display: flex;   
         // flex-direction: column;

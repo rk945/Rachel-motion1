@@ -10,11 +10,18 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 16px;
     line-height: 29px;
     text-align: center;
     padding: 8px 20px;
-    width: 250px;
-    height: 75px;
+    width: 200px;
+    height: 50px;
     cursor: pointer;
+
+    @include md{
+        width: rem-calc(250);
+        height: rem-calc(75);
+        font-size: rem-calc(22);  
+
+    }
 }
