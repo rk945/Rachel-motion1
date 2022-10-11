@@ -349,9 +349,14 @@ template {
   font-family: "Quicksand", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 1.25rem;
   line-height: 20px;
   margin-top: 10px;
+}
+@media (min-width: 768px) {
+  #header2 {
+    font-size: 1.875rem;
+  }
 }
 
 /* =============
