@@ -1,12 +1,12 @@
 import { gsap } from "gsap";
+gsap.set("button",{transformOrigin:"center"});
 
-function header2(){
+function heroContent(){
 
-  var tl = gsap.timeline();
-gsap.from("#header2", {duration:0.75, autoAlpha:0, y:100});
-gsap.from("#second-line", {duration:0.75, autoAlpha:1, y:-100});
-gsap.from("#third-line",{duration:0.5, autoAlpha:2, y:-50});
-gsap.from("#blue-btn",{duration:0.75, delay: 0.90, autoAlpha:0, y:100});
+var tl = gsap.timeline();
+gsap.from("#header1", {duration:1, autoAlpha:0, y:-200});
+gsap.from("#header2", {duration:1, autoAlpha:0, y:200}, ">");
+gsap.from("#blue-btn",{duration:1, autoAlpha:0, y:200}, ">");
 return tl;
    
 }
@@ -16,21 +16,21 @@ var buttonSize = 2;
 
 mm.add("(min-width: 800px)", () => {
   // desktop setup code here...
-  buttonSize = 1.65;
+  buttonSize = 1.45;
 });
 
 mm.add("(max-width: 799px)", () => {
   // mobile setup code here...
-  buttonSize = 1.35;
+  buttonSize = 1.25;
 });
 
 var mainTL = gsap.timeline();
-mainTL.add(header2());
+mainTL.add(heroContent());
 
 
 var buttonAnimation = gsap.timeline({paused:true});
 buttonAnimation.to("#blue-btn",{duration:0.40, scale:buttonSize})
-.to("#blue-btn",{duration:0.40, rotateZ: 360})
+.to("#blue-btn",{duration:0.25, rotateZ: 360})
 .to("#first-line",{duration:0.25, alpha:0, y:25})
 .to("#second-line",{duration:0.25, alpha:0, y:25});
 

@@ -6,14 +6,13 @@
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 800;
-    // font-size: 75px;
     line-height: 50px;
-    margin-bottom: rem-calc(15);
-    font-size: rem-calc(40);
+    margin-bottom: rem-calc(10);
+    font-size: rem-calc(38);
 
     @include md{
         font-size: rem-calc(75);
-        margin-bottom: rem-calc(20);
+        margin-bottom: rem-calc(25);
     }
     
 }
@@ -23,13 +22,13 @@
     font-family: 'Quicksand', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: rem-calc(18);
+    font-size: rem-calc(16);
     line-height: 20px;
     margin-top: rem-calc(5);
 
     @include md{
         font-size: rem-calc(30);
-        margin-top: rem-calc(10);
+        margin-top: rem-calc(15);
     }
     
 }
