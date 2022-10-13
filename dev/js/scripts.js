@@ -1,29 +1,35 @@
+// console.log("hello class");
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
+// Sets
+gsap.set("#hero h1 span",{alpha:0.25})
+
+var heroButtonTL = gsap.timeline({paused:true});
+    heroButtonTL.to("#trails-btn",{duration:0.25,scale:2, backgroundColor:"#881d02"},"trigger")  
+    .to("#first-line",{duration:0.25, alpha:0, y:50},"trigger")
+    .to("#second-line",{duration:0.25, alpha:0, y:20},"trigger")
+    .to("#trails-btn i",{duration:0.25, rotateY:180},"-=0.15");
 
 
-function scrollAnimation(){
+var trailsBtn = document.querySelector("#trails-btn");
+
+trailsBtn.addEventListener("mouseover",function(){
+    heroButtonTL.play();
+})
+
+trailsBtn.addEventListener("mouseout",function(){
+    heroButtonTL.reverse();
+})
+
+function heroAnimation(){
     var tl = gsap.timeline();
-    tl.to("#box", {
-        duration: 1,
-        x: 400,
-        rotation: 360,
-        scrollTrigger: {
-            trigger: "#box",
-            // toggleActions: "restart pause reverse pause",
-            markers:true,
-            start: "0px 50%",
-            end: "100% 10%",
-            scrub: true,
-            pin: true
-        }
-    });
+    tl.from("#first-line",{duration:1,alpha:0, y:-100})
+    .from("#second-line",{duration:1,alpha:0, y:-100},"-=0.75")
+    .from("#trails-btn",{duration:1,y:100, alpha:0},"-=.5")
+    .from("#trails-btn i",{duration:0.5,rotation:90, alpha:0, transformOrigin: "left bottom"},"-=0.5");
     return tl;
 }
 
 
-var mainTL = gsap.timeline();
-mainTL.add(scrollAnimation());
-
+var mainTimeline = gsap.timeline();
+mainTimeline.add(heroAnimation());
