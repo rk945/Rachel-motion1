@@ -37,13 +37,14 @@
                 font-size: rem-calc(50);
             }
 
-            p{
+            // p{
                 
-            }
+            // }
         }
 
         aside{
             height: 100vh;
+            overflow: hidden;
 
             @include md{
                 height: 70vh;
