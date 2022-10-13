@@ -7,7 +7,7 @@
       "uuidString" : "2D98CC5F-45F9-46F2-8AEF-2F553619B0BE"
     }
   ],
-  "creatorBuild" : "34434",
+  "creatorBuild" : "34418",
   "files" : {
     "\/assets\/daniel-leone-g30P1zcOzXo-unsplash.jpg" : {
       "ft" : 16384,
@@ -457,10 +457,11 @@
   },
   "projectAttributes" : {
     "creationDate" : 669227926.75338697,
-    "displayValue" : "Motion-F22-AM",
+    "displayValue" : "Rachel-motion1",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "meme-doge",
-    "iconImageWasSetByUser" : 1
+    "iconImageWasSetByUser" : 1,
+    "lastBuiltDate" : 686563521.53670096
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -1167,8 +1168,7 @@
         "active" : 1
       },
       "no-fallthrough" : {
-        "active" : 1,
-        "optionString" : "{'allowEmptyCase': false}"
+        "active" : 1
       },
       "no-floating-decimal" : {
         "active" : 0
