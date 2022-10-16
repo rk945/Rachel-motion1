@@ -16,3 +16,51 @@ input[type=password],
 textarea {
     -webkit-appearance: none;
 }
+
+input[type=text]{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 8px 8px 16px;
+    gap: 10px;
+    background: $seashell;
+    text-decoration: none;
+    width: 263.03px;
+    height: 29.95px; 
+    box-sizing: border-box;
+    border: 1.5px solid $metal;
+    border-radius: 0px 0px 8px 8px;
+    border: none;
+}
+
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    padding: 16px;
+    background: $seashell;
+    text-decoration: none;
+    width: 263.03px;
+    height: 29.95px;
+    box-sizing: border-box;
+    border: 1.5px solid $metal;
+    border-radius: 0px 0px 8px 8px;
+    border: none;
+
+    @include md{
+        width: 357px;
+        gap: 150px;
+        padding: 16px;
+        margin-right: 52px;
+    }
+
+    @include  lg{
+        width: 613px;
+        gap: 420px;
+        padding: 16px;
+        margin-right: 100px;
+    }
+    
+}

@@ -1,3 +1,71 @@
 /* =============
     Navigation
 ============= */
+.topnav{
+    padding: 16px 18px; 
+    background-color: $seashell;
+
+    @include  sm{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-button{
+        @include lg{
+            display: none;
+        }
+
+        @include xl{
+            display: none;
+        }
+    }
+
+
+     
+
+     
+
+
+   .nav-links{
+    @include sm{
+        display: none;
+    }
+
+    @include md{
+        display: none;
+    }
+
+    @include lg{
+	    display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        list-style: none;
+        gap: 32px;
+        padding: 16px;
+    }
+
+
+
+}
+
+.store-logo{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.right-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+}
+
+
+
+
+
+
+
+ 

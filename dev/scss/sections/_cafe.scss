@@ -1,0 +1,66 @@
+/* =============
+    cafe
+============= */
+
+.cafe{
+
+
+img{
+
+    @include sm{ 
+        width: 396px;
+        height: 219px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;  
+    }
+
+    @include md{ 
+       width: 595px;
+       height: 331px;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;  
+}
+
+@include lg{ 
+    width: 820px;
+    height: 519px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+
+
+}
+
+
+.cafe-text{
+    @include  md{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        grid-gap: 16px;
+        padding-left: 115px;
+        padding-right: 100px;
+
+        .email-contact{
+            grid-row: 2;
+            grid-column: 3;
+            margin-top: -75px;
+
+            @include lg{
+                margin-top: -75px;
+            }
+
+            @include xl{
+                margin-top: -50px;
+            }
+        }
+    }
+}
+
+
+}
+

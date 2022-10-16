@@ -1,0 +1,14 @@
+/* =============
+    delivery
+============= */
+.delivery {
+    background-color: $champagne-pink;
+    height: 140px;
+    width: 100%;
+    text-align: center;
+
+    @include md{
+        height: 170px;
+    }
+}
+

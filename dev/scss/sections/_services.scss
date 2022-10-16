@@ -1,0 +1,134 @@
+/* =============
+    Services
+============= */
+
+.services{
+    background-color: $champagne-pink;
+    width: 100%;
+    border-radius: 0px 0px 8px 8px;
+    padding: 16px 16px;
+
+    .flowers{
+        grid-area: s1;
+        @include md{
+          img{
+            width: 291px;
+            height: 291px;
+
+            @include lg{
+                width: 195px;
+                height: 181px;
+            }
+
+            @include xl{
+                width: 195px;
+                height: 181px;
+            }
+          } 
+        } 
+    }
+
+
+    .plants{
+        grid-area: s2;
+        @include md{
+            img{
+              width: 291px;
+              height: 291px;
+
+              @include lg{
+                width: 195px;
+                height: 181px;
+            }
+            @include xl{
+                width: 195px;
+                height: 181px;
+            }
+          } 
+          } 
+      } 
+    
+
+    .coffee{
+        grid-area: s3;
+        @include md{
+            img{
+              width: 291px;
+              height: 291px;
+
+              @include lg{
+                width: 195px;
+                height: 181px;
+            }
+
+            @include xl{
+                width: 195px;
+                height: 181px;
+            }
+          } 
+          } 
+      } 
+
+
+    .gifts{
+        grid-area: s4;
+        @include md{
+            img{
+              width: 291px;
+              height: 291px;
+
+              @include lg{
+                  width: 195px;
+                  height: 181px;
+              }
+
+              @include xl{
+                width: 195px;
+                height: 181px;
+            }
+          } 
+      } 
+    }
+    
+    .services-content{
+        display: grid;
+        grid-template-columns: repeat(4);
+        gap: 16px;
+        grid-area: services-content;
+        grid-template-areas: 
+        "s1 s1 s2 s2"
+        "s3 s3 s4 s4";
+
+        @include md{
+         gap: 16px;
+         padding-left: 32px;
+         padding-right: 32px;   
+        }
+
+        @include lg{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 32px 0px;
+            gap: 16px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        @include xl{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 32px 0px;
+            gap: 16px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+
+}
+}
+
+
