@@ -3,7 +3,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-
 let config = {strength: 2};
 
 gsap.set("h1", {xPercent: -50, x: -1});
@@ -26,3 +25,23 @@ gsap.to(config, {
   scrub: true
   }
 });
+
+gsap.to("#skills-content", {
+    yPercent: -100,
+    ease: "none",
+    scrollTrigger: {
+      trigger: "#skills",
+      scrub: true
+    }, 
+  });
+  
+  gsap.to("#skills-content", {
+    yPercent: 50,
+    ease: "none",
+    scrollTrigger: {
+      trigger: "#skills",
+      scrub: true
+    }, 
+  });
+
+
