@@ -1,71 +1,53 @@
 /* =============
     Navigation
 ============= */
-.topnav{
-    padding: 16px 18px; 
-    background-color: $seashell;
+#nav-container {
+    ul {
+        height: 100%;
 
-    @include  sm{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .menu-button{
-        @include lg{
-            display: none;
+        @include lg {
+            display: flex;
         }
 
-        @include xl{
+        li {
+            margin-bottom: 20px;
+
+            @include lg {
+                align-items: center;
+                border-right: 2px solid $charcoal;
+                display: flex;
+                margin-bottom: 0px;
+            }
+
+            a:link,
+            a:visited {
+                color: $white;
+                font-family: 'Comfortaa', cursive;
+                padding: 0 20px;
+                text-decoration: none;
+                transition: 0.25s;
+                @include lg {
+                    color: $black;
+                }
+
+                &:hover,
+                &:active {
+                    color: $yellow;
+                }
+            }
+        }
+
+        li:first-child {
+            border: none;
             display: none;
+
+            @include md{
+                display: list-item;
+            }
+        }
+
+        li:last-child {
+            border: none;
         }
     }
-
-
-     
-
-     
-
-
-   .nav-links{
-    @include sm{
-        display: none;
-    }
-
-    @include md{
-        display: none;
-    }
-
-    @include lg{
-	    display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        list-style: none;
-        gap: 32px;
-        padding: 16px;
-    }
-
-
-
 }
-
-.store-logo{
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-}
-
-.right-buttons{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-}
-}
-
-
-
-
-
-
-
- 

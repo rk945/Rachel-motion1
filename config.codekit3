@@ -4,7 +4,7 @@
     {
       "name" : "Process All Remaining Files and Folders",
       "stepType" : 1,
-      "uuidString" : "2D98CC5F-45F9-46F2-8AEF-2F553619B0BE"
+      "uuidString" : "301077FD-6587-4DAE-808A-231B715466F3"
     }
   ],
   "creatorBuild" : "34418",
@@ -20,6 +20,189 @@
       "oAP" : "\/deploy\/css\/styles-min.css",
       "oF" : 0,
       "pg" : 0
+    },
+    "\/deploy\/img\/footer\/facebook.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/footer\/facebook.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/footer\/instagram.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/footer\/instagram.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/footer\/twitter.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/footer\/twitter.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/header\/logo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/header\/logo.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/hero-2\/hero.jpg" : {
+      "ft" : 16384,
+      "iS" : 247748,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/hero-2\/hero.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/hero\/hero.jpg" : {
+      "ft" : 16384,
+      "iS" : 338321,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/hero\/hero.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/history\/hero.jpg" : {
+      "ft" : 16384,
+      "iS" : 15971,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/history\/hero.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/history\/history.jpg" : {
+      "ft" : 16384,
+      "iS" : 18964,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/history\/history.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/skills\/robot.jpg" : {
+      "ft" : 16384,
+      "iS" : 118148,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/skills\/robot.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/skynet\/gallery-1.jpg" : {
+      "ft" : 16384,
+      "iS" : 159219,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/skynet\/gallery-1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/skynet\/gallery-2.jpg" : {
+      "ft" : 16384,
+      "iS" : 89774,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/skynet\/gallery-2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/skynet\/gallery-3.jpg" : {
+      "ft" : 16384,
+      "iS" : 136768,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/skynet\/gallery-3.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/skynet\/gallery-4.jpg" : {
+      "ft" : 16384,
+      "iS" : 181356,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/skynet\/gallery-4.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/skynet\/gallery-5.jpg" : {
+      "ft" : 16384,
+      "iS" : 43962,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/skynet\/gallery-5.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/skynet\/gallery-6.jpg" : {
+      "ft" : 16384,
+      "iS" : 136159,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/skynet\/gallery-6.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/deploy\/index.html" : {
       "cB" : 0,
@@ -40,11 +223,67 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/design\/structure-tags.sketch" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/design\/structure-tags.sketch",
+      "oF" : 0
+    },
+    "\/dev\/content\/hero-2.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/hero-2.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/hero.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/hero.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/history.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/history.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/skills.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/skills.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/skynet.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/skynet.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/skynet.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/skynet.html",
+      "oF" : 0
+    },
     "\/dev\/global\/footer.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/global\/footer.html",
       "oF" : 0
     },
@@ -60,7 +299,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/global\/header.html",
       "oF" : 0
     },
@@ -77,8 +316,8 @@
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/index.html",
-      "oF" : 2
+      "oAP" : "\/dev\/index.html",
+      "oF" : 0
     },
     "\/dev\/js\/scripts.js" : {
       "bF" : 0,
@@ -86,8 +325,8 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/deploy\/js\/scripts-min.js",
-      "oF" : 2,
+      "oAP" : "\/dev\/js\/scripts-min.js",
+      "oF" : 0,
       "sC" : 3,
       "tS" : 0
     },
@@ -241,6 +480,81 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/dev\/scss\/sections\/_hero-2.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_hero-2.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_hero.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_hero.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_history.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_history.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_skills.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_skills.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_skynet.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_skynet.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/dev\/scss\/styles.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -250,11 +564,17 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/css\/styles.css",
-      "oF" : 2,
+      "oAP" : "\/dev\/scss\/styles.css",
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/node_modules" : {
+      "ft" : 65536,
+      "oA" : 2,
+      "oAP" : "\/node_modules",
+      "oF" : 0
     },
     "\/package-lock.json" : {
       "ft" : 524288,
@@ -280,11 +600,12 @@
 
   },
   "projectAttributes" : {
-    "creationDate" : 669227926.75338697,
-    "displayValue" : "Motion-F22-Josh",
+    "creationDate" : 638898965.76008201,
+    "displayValue" : "Rachel-motion1",
     "displayValueWasSetByUser" : 0,
-    "iconImageName" : "brackets-ucla",
-    "iconImageWasSetByUser" : 0
+    "iconImageName" : "brackets-koamaru",
+    "iconImageWasSetByUser" : 0,
+    "lastBuiltDate" : 686563521.53670096
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -589,7 +910,7 @@
     ],
     "esLintConfigFileHandlingType" : 0,
     "esLintECMAVersion" : 7,
-    "esLintEnvironmentsMask" : 1,
+    "esLintEnvironmentsMask" : 8193,
     "esLintRules" : {
       "accessor-pairs" : {
         "active" : 0,
@@ -644,7 +965,7 @@
       },
       "class-methods-use-this" : {
         "active" : 0,
-        "optionString" : "{'exceptMethods': [], 'enforceForClassFields': true}"
+        "optionString" : "{'exceptMethods': []}"
       },
       "comma-dangle" : {
         "active" : 1,
@@ -802,7 +1123,7 @@
       },
       "max-classes-per-file" : {
         "active" : 0,
-        "optionString" : "{'ignoreExpressions': false, 'max': 1}"
+        "optionString" : "1"
       },
       "max-depth" : {
         "active" : 0,
@@ -893,7 +1214,7 @@
         "optionString" : "{'allowParens': true}"
       },
       "no-console" : {
-        "active" : 1,
+        "active" : 0,
         "optionString" : "{'allow': ['warn', 'error']}"
       },
       "no-const-assign" : {
@@ -1005,7 +1326,7 @@
       },
       "no-implicit-coercion" : {
         "active" : 0,
-        "optionString" : "{'boolean': true, 'number': true, 'string': true, 'disallowTemplateShorthand': false, 'allow': []}"
+        "optionString" : "{'boolean': true, 'number': true, 'string': true, 'allow': []}"
       },
       "no-implicit-globals" : {
         "active" : 0
@@ -1055,7 +1376,7 @@
         "active" : 0
       },
       "no-loss-of-precision" : {
-        "active" : 1
+        "active" : 0
       },
       "no-magic-numbers" : {
         "active" : 0,
@@ -1109,7 +1430,7 @@
         "active" : 0
       },
       "no-nonoctal-decimal-escape" : {
-        "active" : 1
+        "active" : 0
       },
       "no-obj-calls" : {
         "active" : 1
@@ -1257,7 +1578,7 @@
         "optionString" : "{'enforceForOrderingRelations': false}"
       },
       "no-unsafe-optional-chaining" : {
-        "active" : 1,
+        "active" : 0,
         "optionString" : "{'disallowArithmeticOperators': false}"
       },
       "no-unused-expressions" : {
@@ -1279,7 +1600,7 @@
         "optionString" : "{'functions': true, 'classes': true, 'variables': true}"
       },
       "no-useless-backreference" : {
-        "active" : 1
+        "active" : 0
       },
       "no-useless-call" : {
         "active" : 0

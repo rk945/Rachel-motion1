@@ -1,45 +1,13 @@
 /* =============
-    hero
+    Hero 
 ============= */
+#hero{
+    background-image: url('../img/hero/hero.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 360px;
 
-.hero-image { 
-background-image: url("../img/home-photos/hero-desktop.png");
-width: 100%;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-position: relative;
-
-@include sm{
-    height: 195px;
+    @include md {
+        height: 683px;
+    }
 }
-
-@include md{
-    height: 380px;
-}
-
-@include lg{
-    height: 583px;
-}
-
-@include xl{
-    height: 657px;
-}
-
-.hero-text {
-text-align: center;
-margin-left: 125px;
-margin-right: 125px;
-position: absolute;
-color: $white;
-@include sm{
-    margin-top: 50px;
-}
-}
-}
-
-
