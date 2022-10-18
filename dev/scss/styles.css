@@ -590,7 +590,6 @@ footer > div ul li a:visited:active {
   font-size: 3rem;
   font-weight: 700;
   line-height: 2.875rem;
-  position: fixed;
   margin: 40px 0 30px;
 }
 @media (min-width: 768px) {
@@ -746,7 +745,7 @@ footer > div ul li a:visited:active {
   text-decoration: none;
   transition: 0.25s;
 }
-#skills > div #skills-content > div h1 {
+#skills > div #skills-content > div h2 {
   font-family: "Comfortaa", cursive;
   font-size: 1.3125rem;
   line-height: 1.625rem;
