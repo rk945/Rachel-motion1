@@ -38,6 +38,7 @@
                     font-size: rem-calc(48);
                     font-weight: 700;
                     line-height: rem-calc(46);
+                    position:fixed;
                     margin: 40px 0 30px;
 
                     @include md {
