@@ -3,6 +3,8 @@
 ============= */
 #skills{
 
+    z-index: 3500;
+
     @include xl{
         display: grid;
             grid-template-columns: auto 1200px auto;
@@ -37,8 +39,8 @@
         }
     
         #skills-content{
-            background-color: $charcoal;
-            color: $white;
+            background-color: var(--charcoal);
+            color: var(--white);
             display: grid;
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". skills .";  
@@ -101,13 +103,13 @@
                         }
 
                         .bottom {
-                            background-color: $black;
+                            background-color: var(--black);
                             height: 9px;
                             margin-top: 5px;
                             width: 100%;
 
                             >div {
-                                background-color: $yellow;
+                                background-color: var(--yellow);
                                 height: 9px;
                             }
                         }

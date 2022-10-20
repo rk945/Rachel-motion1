@@ -33,7 +33,7 @@
                 }
 
                h1 {
-                    color: $yellow;
+                    color: var(--yellow);
                     font-family: 'Comfortaa', cursive;
                     font-size: rem-calc(48);
                     font-weight: 700;

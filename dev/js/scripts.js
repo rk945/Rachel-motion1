@@ -30,18 +30,18 @@ let config = {strength: 1};
 
 gsap.set("#history-first", {zPercent: -50, x: -1});
 
-gsap.to("#history-first", {repeat: -1,yoyo: true,x: 1,duration: 0.2,ease: "power1.inOut",modifiers: {x: gsap.utils.unitize(value => value * config.strength, "px")}})
+tl.to("#history-first", {repeat: 25,yoyo: true,x: 1,duration: 0.2,ease: "power1.inOut",modifiers: {x: gsap.utils.unitize(value => value * config.strength, "px")}})
 
-gsap.to(config, {strength: 100, ease: "power1.inOut", scrollTrigger: {scrub: true}})
+tl.to(config, {strength: 100, ease: "power1.inOut", scrollTrigger: {scrub: true}})
 
 return tl;
 }
 
 function skillsAnimation(){
 var tl = gsap.timeline();
-gsap.to("#skills", {ease: "power1.inOut",scale: 1.2,scrollTrigger: {trigger: "skills",pin: true,scrub: true}})
+tl.to("#skills", {ease: "power1.inOut",scale: 1.2,scrollTrigger: {trigger: "skills",pin: true,scrub: true}})
   
-gsap.to("#skills", {ease: "power1.inOut",scale: 1.2,scrollTrigger: {trigger: "skills",pin: true, scrub: true}})
+tl.to("#skills", {ease: "power1.inOut",scale: 1.2,scrollTrigger: {trigger: "skills",pin: true, scrub: true}})
 
 return tl;
 }

@@ -2,7 +2,7 @@
     Footer
 ============= */
 footer {
-    background-color: $yellow;
+    background-color: var(--yellow);
     display: grid;
     grid-template-areas: ". footer .";
     grid-template-columns: 10px auto 10px;
@@ -17,7 +17,7 @@ footer {
             margin-bottom: 10px;
 
             span {
-                color: $white;
+                color: var(--white);
             }
         }
 
@@ -30,13 +30,13 @@ footer {
 
                 a:link,
                 a:visited {
-                    color: $black;
+                    color: var(--black);
                     font-size: rem-calc(30);
                     transition: 0.25s;
 
                     &:hover,
                     &:active {
-                        color: $white;
+                        color: var(--white);
                     }
                 }
 

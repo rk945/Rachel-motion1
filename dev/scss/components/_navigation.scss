@@ -14,25 +14,25 @@
 
             @include lg {
                 align-items: center;
-                border-right: 2px solid $charcoal;
+                border-right: 2px solid var(--charcoal);
                 display: flex;
                 margin-bottom: 0px;
             }
 
             a:link,
             a:visited {
-                color: $white;
+                color: var(--white);
                 font-family: 'Comfortaa', cursive;
                 padding: 0 20px;
                 text-decoration: none;
                 transition: 0.25s;
                 @include lg {
-                    color: $black;
+                    color: var(--black);
                 }
 
                 &:hover,
                 &:active {
-                    color: $yellow;
+                    color: var(--yellow);
                 }
             }
         }

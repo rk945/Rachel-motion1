@@ -2,11 +2,12 @@
     Header
 ============= */
 header {
-    background-color: $white;
+    background-color: var(--white);
     left: 0;
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 3000;
 
     >div {
         display: grid;
@@ -26,9 +27,9 @@ header {
             text-align: right;
 
            button {
-                background-color: $yellow;
+                background-color: var(--yellow);
                 border-radius: 23px;
-                color: $black;
+                color: var(--black);
                 display: inline-block;
                 font-size: rem-calc(18);
                 font-weight: 700;
@@ -37,8 +38,8 @@ header {
                 transition: 0.25s;
 
                 &:hover {
-                    background-color: $black;
-                    color: $white;
+                    background-color: var(--black);
+                    color: var(--white);
                 }
             }
 
@@ -62,13 +63,13 @@ header {
         }
 
         #nav-container {
-            background-color: $charcoal;
+            background-color: var(--charcoal);
             display: none;
             grid-area: nav;
             padding: 20px 10px 10px;
 
             @include lg {
-                background-color: $white;
+                background-color: var(--white);
                 display: block !important;
             }
         }
