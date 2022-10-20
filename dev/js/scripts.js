@@ -1,64 +1,94 @@
-import $ from "jquery";
-
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 gsap.registerPlugin(ScrollTrigger);
 
-
-let $nav = $('nav[data-nav]');
+/* ==
+This code as been updated from using jQuery to just plain JavaScript
+You do not need this code in your own project! This code controls the burger menu on mobile devices
+== */
+var nav = document.querySelector("nav[data-nav]");
+var navBtns = document.querySelectorAll(".nav-btns");
 let isVisible = false;
 
-$(".nav-btns").on("click", function(){
+for(var i = 0; i < navBtns.length; i++){
+    navBtns[i].addEventListener("click",function(){
+
     console.log("click");
+
     if(isVisible === false){
-        $nav.show();
+        nav.style.display = "block";
         isVisible = true;
     }
     else{
-        $nav.hide();
+        nav.style.display = "none";
         isVisible = false;
-    }
-})
-
-var mainTl = gsap.timeline();
-
-
-function historyAnimation(){
-var tl = gsap.timeline();
-let config = {strength: 1};
-
-gsap.set("#history-first", {zPercent: -50, x: -1});
-
-tl.to("#history-first", {repeat: 25,yoyo: true,x: 1,duration: 0.2,ease: "power1.inOut",modifiers: {x: gsap.utils.unitize(value => value * config.strength, "px")}})
-
-tl.to(config, {strength: 100, ease: "power1.inOut", scrollTrigger: {scrub: true}})
-
-return tl;
+        }
+    })
 }
 
-function skillsAnimation(){
-var tl = gsap.timeline();
-tl.to("#skills", {ease: "power1.inOut",scale: 1.2,scrollTrigger: {trigger: "skills",pin: true,scrub: true}})
+function historyMotion(){
+    var tl = gsap.timeline({scrollTrigger:{trigger:"#history", scrub: true, markers:false, start:"top 75%", end:"bottom 60%"}, stagger:0.25});
+    tl.from("#history-first h1",{y:200, alpha:0})
+    .from("#history-first h4",{y:100, alpha:0})
+    .from("#history-first img",{scale:0, alpha:0},"-=0.25")
+    .from("#history-middle p",{x:"600",alpha:0, stagger:0.25})
+    .from("#history-last",{x:"-600",alpha:0},"-=0.25");
+    return tl;
+}
+
+function skillsMotion(){
+    var tl = gsap.timeline({scrollTrigger:{trigger:"#skills", scrub: true, markers:false, start:"top 75%", end:"bottom 60%"}});
+    tl.from("#skills aside div",{x:600,duration:0.5},"slide")
+    .from("#skills-content article",{x:-800, duration:0.5, transformOrigin:"left center"},"slide")
+    .from("#skills-content h1",{x:100, duration:0.5, alpha:0},"-=0.25")
+    .from("#skills-content p",{x:100, duration:0.5, alpha:0},"-=0.25")
+    .from(".bottom",{scaleX:0, duration:0.5, stagger:0.25, transformOrigin:"left center"})
+    .from(".top h5",{duration:0.5, stagger:0.25, x:-50, alpha:0},"moveText")
+    .from(".top h4",{duration:0.5, stagger:0.25, x:50, alpha:0},"moveText")
+    .from(".yellow-bar",{scaleX:0, duration:0.5, stagger:0.25, transformOrigin:"left center"},"-=0.5");
+    return tl;
+}
+
+function skynetMotion(){
+    var tl = gsap.timeline({scrollTrigger:{trigger:"#skynet", scrub: true, markers:false, start:"top 40%", end:"center 60%"}});
+    tl.from("#gallery-7",{duration:0.5, scale:3, alpha:0})
+    .from("#gallery-1",{duration:0.5, clipPath:"inset(100% 0% 0% 0% )"})
+    .from("#gallery-5",{duration:0.5,clipPath:"inset(0% 100% 0% 0%)"},"-=0.35")
+    .from("#gallery-2",{duration:0.5,clipPath:"inset(0% 0% 100% 0%)"},"-=0.35")
+    .from("#gallery-4",{duration:0.5,clipPath:"inset(0% 0% 100% 0%)"})
+    .from("#gallery-3",{duration:0.5,clipPath:"inset(0% 0% 0% 100%)"})
+    .from("#gallery-6",{duration:0.5,clipPath:"inset(100% 0% 0% 0% "});
+    return tl;
+}
+
+var mainTL = gsap.timeline();
+
+mainTL.add(historyMotion())
+.add(skillsMotion())
+.add(skynetMotion());
+
+
+
+// I wanted to hide and show the header based on the scroll. I did a simple google search and found this:
+// https://greensock.com/forums/topic/27672-scrolltrigger-showhide-navbar-on-scroll-upscroll-down/
+// which lead me to this:
+// https://codepen.io/GreenSock/pen/qBawMGb
+
+// Below is the code that handels that animation:
+
+/* ====
+Show/Hide code
+==== */
+const showAnim = gsap.from('header', { 
+    yPercent: -100,
+    paused: true,
+    duration: 0.2
+  }).progress(1);
   
-tl.to("#skills", {ease: "power1.inOut",scale: 1.2,scrollTrigger: {trigger: "skills",pin: true, scrub: true}})
-
-return tl;
-}
-
-
-let proxy = {skew: 0},skewSetter = gsap.quickSetter("#skynet", "skewY", "deg"),clamp = gsap.utils.clamp(-20, 20); 
-
-ScrollTrigger.create({onUpdate: (self) => {let skew = clamp(self.getVelocity() / -300);if (Math.abs(skew) > Math.abs(proxy.skew)){proxy.skew = skew;gsap.to(proxy, {skew: 0, duration: 0.8, ease: "power3", overwrite: true, onUpdate: () => skewSetter(proxy.skew)});
-}
-}
-});
-gsap.set("#skynet", {transformOrigin: "right center", force3D: true});
-
-
-
-
-
-
-mainTl.add(historyAnimation());
-mainTl.add(skillsAnimation());
+  ScrollTrigger.create({
+    start: "top top",
+    end: 99999,
+    onUpdate: (self) => {
+      self.direction === -1 ? showAnim.play() : showAnim.reverse()
+    }
+  });

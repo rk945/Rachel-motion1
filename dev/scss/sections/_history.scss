@@ -6,6 +6,7 @@
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". history .";
     padding: 60px 0;
+    background-color: var(--white);
 
     @include lg{
         grid-template-columns: auto 60% auto;
@@ -32,7 +33,7 @@
                     grid-area: history-first;
                 }
 
-               h1 {
+                h1 {
                     color: var(--yellow);
                     font-family: 'Comfortaa', cursive;
                     font-size: rem-calc(48);

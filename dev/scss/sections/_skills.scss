@@ -1,141 +1,142 @@
 /* =============
     Skills
 ============= */
-#skills{
+#skills {
+	@include xl {
+		display: grid;
+		grid-template-columns: auto 1200px auto;
+		grid-template-areas: ". skills-container .";
+		overflow: hidden;
+		background-color: var(--white);
+		padding-bottom: 60px;
+	}
 
-    z-index: 3500;
+	> div {
+		@include lg {
+			display: grid;
+			grid-template-columns: 40% auto;
+		}
 
-    @include xl{
-        display: grid;
-            grid-template-columns: auto 1200px auto;
-            grid-template-areas: ". skills-container .";
-    }
+		@include xl {
+			grid-area: skills-container;
+		}
 
-    
-    >div{
+		aside {
+			overflow: hidden;
+			height: 380px;
 
-        @include lg{
-            display: grid;
-            grid-template-columns: 40% auto;
-        }
+			@include md {
+				height: 476px;
+			}
 
-        @include xl{
-            grid-area: skills-container;
-        }
-    
-        aside {
-            background-image: url('../img/skills/robot.jpg');
-            background-position: center;
-            background-size: cover;
-            height: 380px;
+			@include lg {
+				height: auto;
+			}
 
-            @include md {
-                height: 476px;
-            }
+			> div {
+				background-image: url("../img/skills/robot.jpg");
+				background-position: center;
+				background-size: cover;
+				height: 100%;
+			}
+		}
 
-            @include lg {
-                height: auto;
-            }
-        }
-    
-        #skills-content{
-            background-color: var(--charcoal);
-            color: var(--white);
-            display: grid;
-            grid-template-columns: 16px auto 16px;
-            grid-template-areas: ". skills .";  
-            padding: 60px 0;
+		#skills-content {
+			overflow: hidden;
+			article {
+				background-color: var(--charcoal);
+				color: var(--white);
+				display: grid;
+				grid-template-columns: 16px auto 16px;
+				grid-template-areas: ". skills .";
+				padding: 60px 0;
+				overflow: hidden;
 
-            grid-template-columns: 10px auto 10px;
-            padding: 60px 0;
+				grid-template-columns: 10px auto 10px;
+				padding: 60px 0;
 
-            @include md {
-                grid-template-columns: 10% auto 10%;
-            }
+				@include md {
+					grid-template-columns: 10% auto 10%;
+				}
 
-            @include lg {
-                padding: 25px 0 44px;
-            }
-    
-            
-            >div{
-                grid-area: skills;
-                // border: 1px solid red;
+				@include lg {
+					padding: 25px 0 44px;
+				}
+				> div {
+					grid-area: skills;
 
-                text-decoration: none;
-                transition: 0.25s;
+					text-decoration: none;
+					transition: 0.25s;
 
-                h2 {
-                    font-family: 'Comfortaa', cursive;
-                    font-size: rem-calc(21);
-                    line-height: rem-calc(26);
-                    margin-bottom: 35px;
-                }
+					h1 {
+						font-family: "Comfortaa", cursive;
+						font-size: rem-calc(21);
+						line-height: rem-calc(26);
+						margin-bottom: 35px;
+					}
 
-                p {
-                    font-size: rem-calc(18);
-                    line-height: rem-calc(26);
+					p {
+						font-size: rem-calc(18);
+						line-height: rem-calc(26);
 
-                    display: inline-block;
-                }
+						display: inline-block;
+					}
 
+					ul {
+						li {
+							margin-top: 46px;
 
-                ul {
-                    li {
-                        margin-top: 46px;
+							@include md {
+								margin-top: 51px;
+							}
 
-                        @include md {
-                            margin-top: 51px;
-                        }
+							.top {
+								display: flex;
 
-                        .top {
-                            display: flex;
+								h5 {
+									font-size: rem-calc(18);
+									font-weight: 400;
+								}
 
-                            h5 {
-                                font-size: rem-calc(18);
-                                font-weight: 400;
-                            }
+								h4 {
+									font-size: rem-calc(18);
+									margin-left: auto;
+								}
+							}
 
-                            h4 {
-                                font-size: rem-calc(18);
-                                margin-left: auto;
-                            }
-                        }
+							.bottom {
+								background-color: var(--black);
+								height: 9px;
+								margin-top: 5px;
+								width: 100%;
 
-                        .bottom {
-                            background-color: var(--black);
-                            height: 9px;
-                            margin-top: 5px;
-                            width: 100%;
+								> div {
+									background-color: var(--yellow);
+									height: 9px;
+								}
+							}
+						}
 
-                            >div {
-                                background-color: var(--yellow);
-                                height: 9px;
-                            }
-                        }
-                    }
+						#emotion {
+							.yellow-bar {
+								width: 64%;
+							}
+						}
 
-                    #emotion {
-                        .yellow-bar {
-                            width: 64%;
-                        }
-                    }
+						#learning {
+							.yellow-bar {
+								width: 90%;
+							}
+						}
 
-                    #learning {
-                        .yellow-bar {
-                            width: 90%;
-                        }
-                    }
-
-                    #math {
-                        .yellow-bar {
-                            width: 95%;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    
+						#math {
+							.yellow-bar {
+								width: 95%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

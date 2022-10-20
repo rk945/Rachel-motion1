@@ -7,7 +7,7 @@
       "uuidString" : "301077FD-6587-4DAE-808A-231B715466F3"
     }
   ],
-  "creatorBuild" : "34418",
+  "creatorBuild" : "34434",
   "files" : {
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
@@ -326,7 +326,7 @@
       "mi" : 1,
       "oA" : 0,
       "oAP" : "\/deploy\/js\/scripts-min.js",
-      "oF" : 3,
+      "oF" : 2,
       "sC" : 3,
       "tS" : 0
     },
@@ -601,11 +601,10 @@
   },
   "projectAttributes" : {
     "creationDate" : 638898965.76008201,
-    "displayValue" : "Rachel-motion1",
+    "displayValue" : "Motion-F22-AM",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-koamaru",
-    "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 686563521.53670096
+    "iconImageWasSetByUser" : 0
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -1312,7 +1311,8 @@
         "active" : 1
       },
       "no-fallthrough" : {
-        "active" : 1
+        "active" : 1,
+        "optionString" : "{'allowEmptyCase': false}"
       },
       "no-floating-decimal" : {
         "active" : 0

@@ -5,6 +5,8 @@
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". skynet .";
+    background-color: var(--white);
+
     @include md {
         padding: 54px 0;
     }
@@ -49,6 +51,7 @@
             li {
                 background-position: center;
                 background-size: cover;
+                
             }
     
             #gallery-1 {
