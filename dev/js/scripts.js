@@ -38,7 +38,7 @@ return tl;
 }
 
 function textAnimation(){
-var tl = gsap.timeline({scrollTrigger:{trigger:"#history", scrub: true, markers:true, start:"top 75%", end:"bottom 65%"}, stagger:0.25});
+var tl = gsap.timeline({scrollTrigger:{trigger:"#history", scrub: true, markers:false, start:"top 75%", end:"bottom 65%"}, stagger:0.25});
 tl.from("#history-middle p",{x:"600",alpha:0},"-=0.25");
 tl.from("#history-last",{x:"-600",alpha:0}, "-=0.25");
 return tl;
