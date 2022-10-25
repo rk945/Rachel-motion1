@@ -30,10 +30,17 @@ let config = {strength: 1};
 
 gsap.set("#history-first", {zPercent: -50, x: -1});
 
-tl.to("#history-first", {repeat: 25,yoyo: true,x: 1,duration: 0.2,ease: "power1.inOut",modifiers: {x: gsap.utils.unitize(value => value * config.strength, "px")}})
+tl.to("#history-first", {repeat: 15,yoyo: true,x: 1,duration: 0.2,ease: "power1.inOut",modifiers: {x: gsap.utils.unitize(value => value * config.strength, "px")}})
 
 tl.to(config, {strength: 100, ease: "power1.inOut", scrollTrigger: {scrub: true}})
 
+return tl;
+}
+
+function textAnimation(){
+var tl = gsap.timeline({scrollTrigger:{trigger:"#text", scrub: true, markers:false, start:"top 75%", end:"bottom 65%"}, stagger:0.25});
+tl.from("#history-middle p",{x:"600",alpha:0},"-=0.25");
+tl.from("#history-last",{x:"-600",alpha:0}, "-=0.25");
 return tl;
 }
 
@@ -62,3 +69,5 @@ gsap.set("#skynet", {transformOrigin: "right center", force3D: true});
 
 mainTl.add(historyAnimation());
 mainTl.add(skillsAnimation());
+mainTl.add(textAnimation());
+
