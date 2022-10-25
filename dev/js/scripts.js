@@ -53,6 +53,13 @@ tl.to("#skills", {ease: "power1.inOut",scale: 1.2,scrollTrigger: {trigger: "skil
 return tl;
 }
 
+function hero2Animation(){
+    var tl = gsap.timeline({scrollTrigger:{trigger:"#hero2", scrub: true, markers:false, start:"top 75%", end:"bottom 65%"}, stagger:0.25});
+    tl.to("#hero-2",{scale: 0.75,alpha:0});
+    tl.to("#hero-2",{scale: 0.75,alpha:1});
+    return tl;
+    }
+
 
 let proxy = {skew: 0},skewSetter = gsap.quickSetter("#skynet", "skewY", "deg"),clamp = gsap.utils.clamp(-20, 20); 
 
@@ -70,4 +77,5 @@ gsap.set("#skynet", {transformOrigin: "right center", force3D: true});
 mainTl.add(historyAnimation());
 mainTl.add(skillsAnimation());
 mainTl.add(textAnimation());
+mainTl.add(hero2Animation());
 
