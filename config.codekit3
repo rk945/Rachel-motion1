@@ -7,7 +7,7 @@
       "uuidString" : "2D98CC5F-45F9-46F2-8AEF-2F553619B0BE"
     }
   ],
-  "creatorBuild" : "34434",
+  "creatorBuild" : "34418",
   "files" : {
     "\/assets\/DrawSVG.fig" : {
       "cB" : 0,
@@ -348,10 +348,11 @@
   },
   "projectAttributes" : {
     "creationDate" : 669227926.75338697,
-    "displayValue" : "Motion-F22-AM",
+    "displayValue" : "Rachel-motion1",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-ucla",
-    "iconImageWasSetByUser" : 0
+    "iconImageWasSetByUser" : 0,
+    "lastBuiltDate" : 686563521.53670096
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -1058,8 +1059,7 @@
         "active" : 1
       },
       "no-fallthrough" : {
-        "active" : 1,
-        "optionString" : "{'allowEmptyCase': false}"
+        "active" : 1
       },
       "no-floating-decimal" : {
         "active" : 0
