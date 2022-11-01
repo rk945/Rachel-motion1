@@ -9,9 +9,10 @@ gsap.registerPlugin(DrawSVGPlugin, GSDevTools);
 
 function patternMotion(){
 
-    var tl = gsap.timeline({repeat: -1, repeatDelay:1});
-    tl.from(".odd",{rotation:120, transformOrigin:"center center", duration:3,  ease: "power4.out"},0)
-    .fromTo(".even",{rotation:-120, transformOrigin:"center center", duration:3,  ease: "none"})
+    var tl = gsap.timeline({repeat: -1, repeatDelay:1.5});
+    tl.from(".odd",{rotation:120, transformOrigin:"center center", duration:2,  ease: "power4.out"},0)
+    .from(".even",{rotation:-120, transformOrigin:"center center", duration:2,  ease: "power4.out"})
+    .fromto(".odd",{rotation:120, transformOrigin:"center center", duration:2,  ease: "power4.out"},0)
     return tl;
 }
 
