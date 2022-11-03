@@ -9,14 +9,6 @@
   ],
   "creatorBuild" : "34418",
   "files" : {
-    "\/assets\/DrawSVG.fig" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/assets\/DrawSVG.fig",
-      "oF" : 0
-    },
     "\/assets\/line-animation.svg" : {
       "ft" : 2097152,
       "miP" : 0,
