@@ -7,36 +7,24 @@ import { GSDevTools } from "gsap/GSDevTools";
 gsap.registerPlugin(DrawSVGPlugin, GSDevTools);
 
 function simpleMotion(){
-     
-    var line = document.querySelector("#center-line");
-   
-    line = line.getBBox();
-   
-    var leftBall = document.querySelector("#left-ball");
-    leftBall = leftBall.getBBox();
-   
-    var center = document.querySelector("#center");
-    center = center.getBBox();
 
-   
-    gsap.set("#left-ball",{x:line.width / 2 + leftBall.width / 2, transformOrigin:"center" })
-    gsap.set("#right-ball",{x:-line.width/2 - leftBall.width / 2, transformOrigin:"center" })
-   
-   var tl = gsap.timeline({repeat: -1, repeatDelay:1});
-   tl.from("#right-ball",{scale:2, duration:0.5, drawSVG:0})
-    .from("#left-ball",{scale:2, duration:0.5, drawSVG:0})
-    .to("#right-ball",{x:0, duration:0.25},"rollOut")
-    .to("#left-ball",{x:0, duration:0.25},"rollOut")
-    .fromTo("#center-line",{drawSVG:"50% 50%"},{duration:0.25, drawSVG: "0% 100%"},"rollOut")
-    .to("#top-clip",{opacity:0, duration: 0.25})
-    .to("#bottom-clip",{opacity:0, duration: 0.25})
-    .from("#center",{duration: 0.5, scale:0, transformOrigin:"center"},"-=50%")
-    .to("#center",{duration: 0.25, y: -center.height / 2 - 50},"-=50%")
-    .to("#center",{duration: 0.25, y: 0})
-    .to("#top-clip",{opacity:2, duration: 0.25, ease:"power2.in"})
-    .to("#bottom-clip",{opacity:2, duration: 0.25, ease:"power2.in"})
-    .fromTo("#center-outline",{drawSVG:"100% 50%"},{duration:0.15,drawSVG:"125% 25%"},"-=50%")
-   
+   var tl = gsap.timeline();
+   tl.from("#r-caps",{scale:0, duration:1, stagger:0.5, x: 300, drawSVG: 0})
+   .from("#k-caps",{scale:0, duration:1, stagger:0.5, x: 300},"-=50%")
+   .from("#letter-1",{duration: 0.75, scale:0, y:-150, stagger:0.5, transformOrigin:"letter-1"},"-=50%")
+   .from("#letter-2",{duration: 0.75, scale:0, y:-150, stagger:0.5, transformOrigin:"letter-2"},"-=50%")
+   .from("#letter-3",{duration: 0.75, scale:0, y:-150, stagger:0.5, transformOrigin:"letter-3"},"-=50%")
+   .from("#letter-4",{duration: 0.75, scale:0, y:-150, stagger:0.5, transformOrigin:"letter-4"},"-=50%")
+   .from("#letter-5",{duration: 0.75, scale:0, y:-150, stagger:0.5, transformOrigin:"letter-5"},"-=50%")
+   .from("#letter-6",{duration: 0.75, scale:0, y:-150, stagger:0.5, transformOrigin:"letter-6"},"-=50%")
+   .from("#letter-7",{duration: 0.75, scale:0, y:150, stagger:0.5, transformOrigin:"letter-7"},"-=50%")
+   .from("#letter-8",{duration: 0.75, scale:0, y:150, stagger:0.5, transformOrigin:"letter-8"},"-=50%")
+   .from("#letter-9",{duration: 0.75, scale:0, y:150, stagger:0.5, transformOrigin:"letter-9"},"-=50%")
+   .from("#letter-10",{duration: 0.75, scale:0, y:150, stagger:0.5, transformOrigin:"letter-10"},"-=50%")
+   .from("#letter-11",{duration: 0.75, scale:0, y:150, stagger:0.5, transformOrigin:"letter-11"},"-=50%")
+   .from("#letter-12",{duration: 0.75, scale:0, y:150, stagger:0.5, transformOrigin:"letter-12"},"-=50%")
+   .from("#letter-13",{duration: 0.75, scale:0, y:150, stagger:0.5, transformOrigin:"letter-13"},"-=50%")
+   .from("#letter-14",{duration: 0.75, scale:0, y:150, stagger:0.5, transformOrigin:"letter-14"},"-=50%")
    return tl; 
    
    }
@@ -44,31 +32,22 @@ function simpleMotion(){
 
 function patternMotion(){
 
-    var tl = gsap.timeline({repeat: -1, repeatDelay:1.5});
-    tl.from(".odd",{rotation:180, transformOrigin:"center center", duration:1,  ease: "power4.out"},0)
-    .from(".even",{rotation:-180, transformOrigin:"center center", duration:1,  ease: "power4.out"},0)
-    .fromTo(".odd",{rotation:180, transformOrigin:"center center", duration:1,  ease: "power4.out"},0)
+    var tl = gsap.timeline();
+    tl.from(".odd",{duration:3, drawSVG:0, stagger:0.25, rotate:180, transformOrigin:"center", ease: "power4.out"},"spin")
+    .fromTo(".even",{drawSVG:"0% 0%"},{duration:4, drawSVG:0, stagger:0.25, rotate:180, transformOrigin:"center", ease: "power4.out"},"spin");
     return tl;
 }
 
-function UIMotion(){
-    var bottomLine = document.querySelector("#bottom-line");
+function UIMotion(){ 
 
-    bottomLine = bottomLine.getBBox();
-
-    console.log(bottomLine.width);
-  
-var tl = gsap.timeline({repeat:-1});
-tl.to("#pencil",{duration:0.5,x:bottomLine.width},"draw")
-.from("#bottom-line",{duration:0.5,drawSVG:0},"draw")
-.to("#pencil",{duration:0.25, alpha:0},"drawOutline")
-.fromTo("#outline",{drawSVG:"100% 100%"},{duration:0.5, drawSVG:"100% 0%"},"drawOutline")
-.from("#box-bg",{duration:0.5, scaleX:0})
-.from(".letter",{duration:0.25, alpha:0, y:20, stagger: 0.12},"-=50%")
-.from("#glass",{duration:0.25, drawSVG:0},"-=.5")
-.from("#handle",{duration:0.25, drawSVG:0},"-=.25")
+var tl = gsap.timeline();
+tl.from("#line-1",{duration:0.5, stagger:0.25, alpha:0, drawSVG:0})
+.from("#line-2",{duration:0.5, stagger:0.25, alpha:0, drawSVG:0})
+.from("#line-3",{duration:0.5, stagger:0.25, alpha:0, drawSVG:0})
+.from("#line-4",{duration:0.5, stagger:0.25, alpha:0, drawSVG:0})
+.from("#line-5",{duration:0.5, stagger:0.25, alpha:0, drawSVG:0})
+.from("#line-6",{duration:0.5, stagger:0.25, alpha:0, drawSVG:0})
 return tl;
-
 
 }
 

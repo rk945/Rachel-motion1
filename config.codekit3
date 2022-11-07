@@ -7,33 +7,33 @@
       "uuidString" : "2D98CC5F-45F9-46F2-8AEF-2F553619B0BE"
     }
   ],
-  "creatorBuild" : "34418",
+  "creatorBuild" : "34434",
   "files" : {
-    "\/assets\/line-animation.svg" : {
+    "\/assets\/pattern.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/assets\/line-animation.svg",
+      "oAP" : "\/assets\/pattern.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/assets\/pattern-animation.svg" : {
+    "\/assets\/simple.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/assets\/pattern-animation.svg",
+      "oAP" : "\/assets\/simple.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/assets\/UI-animation.svg" : {
+    "\/assets\/UI.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/assets\/UI-animation.svg",
+      "oAP" : "\/assets\/UI.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -1051,7 +1051,8 @@
         "active" : 1
       },
       "no-fallthrough" : {
-        "active" : 1
+        "active" : 1,
+        "optionString" : "{'allowEmptyCase': false}"
       },
       "no-floating-decimal" : {
         "active" : 0
