@@ -9,31 +9,11 @@
   ],
   "creatorBuild" : "34434",
   "files" : {
-    "\/assets\/pattern.svg" : {
+    "\/assets\/TrueClicks.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/assets\/pattern.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/assets\/simple.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/assets\/simple.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/assets\/UI.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/assets\/UI.svg",
+      "oAP" : "\/assets\/TrueClicks.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -70,13 +50,13 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/content\/drawSVG.kit" : {
+    "\/dev\/content\/SVG.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/drawSVG.html",
-      "oF" : 1
+      "oA" : 0,
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 3
     },
     "\/dev\/global\/footer.kit" : {
       "cB" : 0,
