@@ -375,7 +375,14 @@ textarea {
 }
 @media (min-width: 1024px) {
   #trueClicks-container {
-    grid-template-columns: auto 800px auto;
+    grid-template-columns: auto 650px auto;
+    margin-top: -75px;
+  }
+}
+@media (min-width: 768px) {
+  #trueClicks-container {
+    grid-template-columns: auto 650px auto;
+    margin-top: -50px;
   }
 }
 #trueClicks-container > div {

@@ -4,7 +4,13 @@
     grid-template-areas: ". logo .";
 
     @include lg{
-        grid-template-columns:auto 800px auto;
+        grid-template-columns:auto 650px auto;
+        margin-top: -75px;
+    }
+
+    @include md{
+        grid-template-columns:auto 650px auto;
+        margin-top: -50px;
     }
 
     >div{
