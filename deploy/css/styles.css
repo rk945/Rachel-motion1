@@ -327,7 +327,7 @@ template {
 /* =============
     Base
 ============= */
-.hide {
+.hidden {
   display: none;
 }
 
@@ -368,27 +368,16 @@ textarea {
 /* =============
     Footer
 ============= */
-#drawSVG-container {
-  min-height: 100vh;
+#trueClicks-container {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". logo .";
 }
-#drawSVG-container .drawSVG {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+@media (min-width: 1024px) {
+  #trueClicks-container {
+    grid-template-columns: auto 800px auto;
+  }
 }
-#drawSVG-container .drawSVG .title {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#drawSVG-container .drawSVG .svg {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#drawSVG-container .drawSVG .svg svg {
-  width: 100%;
+#trueClicks-container > div {
+  grid-area: logo;
 }

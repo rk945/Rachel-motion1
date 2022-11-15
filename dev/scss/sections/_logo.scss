@@ -1,0 +1,13 @@
+#trueClicks-container{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". logo .";
+
+    @include lg{
+        grid-template-columns:auto 800px auto;
+    }
+
+    >div{
+        grid-area: logo;
+    }
+}
