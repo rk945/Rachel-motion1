@@ -9,11 +9,11 @@
   ],
   "creatorBuild" : "34434",
   "files" : {
-    "\/assets\/rk-logo.svg" : {
+    "\/assets\/TrueClicks.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/assets\/rk-logo.svg",
+      "oAP" : "\/assets\/TrueClicks.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -259,7 +259,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_drawSVG.scss" : {
+    "\/dev\/scss\/sections\/_logo.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -268,7 +268,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_drawSVG.css",
+      "oAP" : "\/dev\/scss\/sections\/_logo.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
