@@ -41,28 +41,14 @@ function surnameMotion (){
 
 function scaleMotion (){
     var tl = gsap.timeline();
-    tl.to("#rk-logo",{duration:1, scale:1.5, transformOrigin:"rk-logo"})
-      .to("#rk-logo",{duration:1, scale:-1.5, transformOrigin:"rk-logo"})
-      .to("#rk-logo",{duration:1, scale:1, transformOrigin:"rk-logo"})
+    tl.to("#rk-logo",{duration:1, scale:1.5, transformOrigin:"50% 50%", yoyo:true})
+      .to("#rk-logo",{duration:1, scale:0.1, autoAlpha:0, transformOrigin:"50% 50%"})
+      .to("#rk-logo",{duration:1.5, scale:1, autoAlpha:2, transformOrigin:"50% 50%"})
     return tl;
 }
 
-// function scaleMotion (){
-//     var tl = gsap.timeline();
-//     tl.to("#rk-logo",{duration:1, scale:1.5, transformOrigin:"center"})
-//       .to("#rk-logo",{duration:1, scale:-1.5, transformOrigin:"center"})
-//       .to("#rk-logo",{duration:1, scale:1, transformOrigin:"center"})
-//     return tl;
-// }
 
 
-// function scaleMotion (){
-//     var tl = gsap.timeline();
-//     tl.from("#rk-logo",{duration:1, scale:1.5, transformOrigin:"center"})
-//       .from("#rk-logo",{duration:1, scale:-1.5, transformOrigin:"center"})
-//       .from("#rk-logo",{duration:1, scale:1, transformOrigin:"center"})
-//     return tl;
-// }
 
 
 var mainTL = gsap.timeline();
@@ -70,5 +56,6 @@ mainTL.add(initialMotion())
 .add(firstnameMotion())
 .add(surnameMotion())
 .add(scaleMotion())
+
 
 GSDevTools.create();

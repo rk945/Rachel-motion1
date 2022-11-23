@@ -371,12 +371,12 @@ textarea {
 #rk-logo-container {
   display: grid;
   margin-top: 175px;
-  grid-template-columns: 16px auto 16px;
+  grid-template-columns: 20px auto 20px;
   grid-template-areas: ". logo .";
 }
 @media (min-width: 1024px) {
   #rk-logo-container {
-    grid-template-columns: auto 800px auto;
+    grid-template-columns: auto 750px auto;
   }
 }
 #rk-logo-container > div {
