@@ -13,6 +13,14 @@ html {
 :root {
   --white: #fff;
   --black: #000;
+  --olive: #4b3f18;
+  --indigo: #013a53;
+  --emerald: #005053;
+  --plum: #44012e;
+  --pumpkin: #bf5e28;
+  --sand: #c5a992;
+  --pistachio: #b7c0a4;
+  --nickel: #b7b9b5;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -327,7 +335,7 @@ template {
 /* =============
     Base
 ============= */
-.hide {
+.hidden {
   display: none;
 }
 
