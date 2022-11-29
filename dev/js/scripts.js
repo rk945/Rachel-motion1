@@ -10,10 +10,10 @@ MorphSVGPlugin.convertToPath("circle, rect");
 
 
 function scaleMotion(){
-    var tl = gsap.timeline();
-    tl.to("#wagner-logo",{duration:0.75, scale:1.5, transformOrigin:"50% 50%", yoyo:true})
-    .to("#wagner-logo",{duration:0.75, scale:0.1, autoAlpha:0, transformOrigin:"50% 50%"})
-    .to("#wagner-logo",{duration:1, scale:1, autoAlpha:2, transformOrigin:"50% 50%"})
+    var tl = gsap.timeline({repeat:-1});
+    tl.to("#wagner-logo",{duration:0.75, scale:1.5, transformOrigin:"center", yoyo:true})
+    .to("#wagner-logo",{duration:0.75, scale:0.1, autoAlpha:0})
+    .to("#wagner-logo",{duration:1, scale:1, autoAlpha:2})
   return tl;
 }
 
