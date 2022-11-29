@@ -7,41 +7,13 @@
       "uuidString" : "2D98CC5F-45F9-46F2-8AEF-2F553619B0BE"
     }
   ],
-  "creatorBuild" : "34418",
+  "creatorBuild" : "34434",
   "files" : {
-    "\/assets\/DrawSVG.fig" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/assets\/DrawSVG.fig",
-      "oF" : 0
-    },
-    "\/assets\/line-animation.svg" : {
+    "\/assets\/wagner-logo.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/assets\/line-animation.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/assets\/pattern-animation.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/assets\/pattern-animation.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/assets\/UI-animation.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/assets\/UI-animation.svg",
+      "oAP" : "\/assets\/wagner-logo.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -78,13 +50,13 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/content\/drawSVG.kit" : {
+    "\/dev\/content\/SVG.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/drawSVG.html",
-      "oF" : 1
+      "oA" : 0,
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 3
     },
     "\/dev\/global\/footer.kit" : {
       "cB" : 0,
@@ -287,7 +259,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_drawSVG.scss" : {
+    "\/dev\/scss\/sections\/_logo.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -295,9 +267,9 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_drawSVG.css",
-      "oF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 3,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1059,7 +1031,8 @@
         "active" : 1
       },
       "no-fallthrough" : {
-        "active" : 1
+        "active" : 1,
+        "optionString" : "{'allowEmptyCase': false}"
       },
       "no-floating-decimal" : {
         "active" : 0
