@@ -1,16 +1,13 @@
 import { gsap } from "gsap";
-
-
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import { GSDevTools } from "gsap/GSDevTools";
-import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 
-gsap.registerPlugin(DrawSVGPlugin, GSDevTools, MorphSVGPlugin);
+gsap.registerPlugin(DrawSVGPlugin, GSDevTools);
 
 function initialMotion (){
     var tl = gsap.timeline();
-    tl.from("#cap-k",{scale:0, duration:1, stagger:0.5, x: 300, drawSVG: 0})
-    .from("#cap-r",{scale:0, duration:1, stagger:0.5, x: 300})
+    tl.from("#cap-r",{drawSVG:"0%", duration:1, transformOrigin:"center", ease: "power4.out"})
+    .from("#cap-k",{drawSVG:"0%", duration:1, transformOrigin:"center", ease: "power4.out"})
     return tl;
 }
 
@@ -53,8 +50,8 @@ function scaleMotion (){
 
 var mainTL = gsap.timeline();
 mainTL.add(initialMotion())
-.add(firstnameMotion())
-.add(surnameMotion())
+.add(firstnameMotion(),"playTogether")
+.add(surnameMotion(),"playTogether")
 .add(scaleMotion())
 
 
