@@ -2,8 +2,12 @@ import { gsap } from "gsap";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import { GSDevTools } from "gsap/GSDevTools";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
+import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 
-gsap.registerPlugin(DrawSVGPlugin, GSDevTools, MorphSVGPlugin);
+
+
+
+gsap.registerPlugin(DrawSVGPlugin, GSDevTools, MorphSVGPlugin, MotionPathPlugin);
 MorphSVGPlugin.convertToPath("circle, rect");
 
 function arrowMotion(){
@@ -40,13 +44,20 @@ function arrowsquareMorph(){
     return tl;
 }
 
-function outerlineMotion(){
+function outerlineDraw(){
     var tl = gsap.timeline();
-    tl.from("#purple-outer-line",{duration:0.5, stagger:0.25, alpha:0, drawSVG:0},"sameTime")
-    .from("#blue-outer-line",{duration:0.5, stagger:0.25, alpha:0, drawSVG:0},"sameTime")
+    tl.from("#purple-outer-line",{drawSVG:"0%", duration:0.5},"sameTime")
+      .from("#blue-outer-line",{drawSVG:"0%", duration:0.5},"sameTime")
     return tl;
 }
  
+
+// function outerlineMotion(){
+//     var tl = gsap.timeline();
+//     tl.to("#purple-outer-line",{motionPath:{path:"#circularpath", align: "#circularpath", alignOrigin: [0.5, 0.5], autoRotate:true},duration:1},"sameTime")
+//     .to("#blue-outer-line",{motionPath:{path:"#circularpath", align: "#circularpath", autoRotate:true},duration:1},"sameTime")
+//     return tl;
+// }
 
 
 
@@ -58,7 +69,8 @@ mainTL.add(arrowMotion(),"playTogether")
 .add(squareMotion(),"playTogether")
 .add(arrowsquareMotion())
 .add(arrowsquareMorph())
-.add(outerlineMotion())
+.add(outerlineDraw())
+// .add(outerlineMotion())
 
 
 
