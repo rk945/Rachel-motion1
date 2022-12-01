@@ -4,10 +4,17 @@ import { GSDevTools } from "gsap/GSDevTools";
 
 gsap.registerPlugin(DrawSVGPlugin, GSDevTools);
 
+// function initialMotion (){
+//     var tl = gsap.timeline();
+//     tl.from("#cap-r",{drawSVG:"0%", duration:1, transformOrigin:"center", ease: "power4.out"})
+//     .from("#cap-k",{drawSVG:"0%", duration:1, transformOrigin:"center", ease: "power4.out"})
+//     return tl;
+// }
+
 function initialMotion (){
     var tl = gsap.timeline();
-    tl.from("#cap-r",{drawSVG:"0%", duration:1, transformOrigin:"center", ease: "power4.out"})
-    .from("#cap-k",{drawSVG:"0%", duration:1, transformOrigin:"center", ease: "power4.out"})
+    tl.from("#cap-r",{duration:1, autoAlpha:0, scale:8, transformOrigin: '50% 50%', ease:"Power4.easeOut"})
+    .from("#cap-k",{duration:1, autoAlpha:0, scale:8, transformOrigin: '50% 50%', ease:"Power4.easeOut"})
     return tl;
 }
 
