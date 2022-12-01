@@ -39,6 +39,13 @@ function arrowsquareMorph(){
       .to("#square",{duration:1, scale:-0.5, x:-75, y:150, rotate:180, morphSVG:"#circle"},"sameTime")
     return tl;
 }
+
+function outerlineMotion(){
+    var tl = gsap.timeline();
+    tl.to("#purple-outer-line",{duration:0.5, stagger:0.25, alpha:0, drawSVG:0},"sameTime")
+    .to("#blue-outer-line",{duration:0.5, stagger:0.25, alpha:0, drawSVG:0},"sameTime")
+    return tl;
+}
  
 
 
@@ -51,6 +58,7 @@ mainTL.add(arrowMotion(),"playTogether")
 .add(squareMotion(),"playTogether")
 .add(arrowsquareMotion())
 .add(arrowsquareMorph())
+.add(outerlineMotion())
 
 
 
