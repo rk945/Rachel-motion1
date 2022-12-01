@@ -42,8 +42,8 @@ function arrowsquareMorph(){
 
 function outerlineMotion(){
     var tl = gsap.timeline();
-    tl.to("#purple-outer-line",{duration:0.5, stagger:0.25, alpha:0, drawSVG:0},"sameTime")
-    .to("#blue-outer-line",{duration:0.5, stagger:0.25, alpha:0, drawSVG:0},"sameTime")
+    tl.from("#purple-outer-line",{duration:0.5, stagger:0.25, alpha:0, drawSVG:0},"sameTime")
+    .from("#blue-outer-line",{duration:0.5, stagger:0.25, alpha:0, drawSVG:0},"sameTime")
     return tl;
 }
  
