@@ -4,19 +4,21 @@ import { GSDevTools } from "gsap/GSDevTools";
 
 gsap.registerPlugin(DrawSVGPlugin, GSDevTools);
 
-// function initialMotion (){
-//     var tl = gsap.timeline();
-//     tl.from("#cap-r",{drawSVG:"0%", duration:1, transformOrigin:"center", ease: "power4.out"})
-//     .from("#cap-k",{drawSVG:"0%", duration:1, transformOrigin:"center", ease: "power4.out"})
-//     return tl;
-// }
 
-function initialMotion (){
+function caprDraw (){
     var tl = gsap.timeline();
-    tl.from("#cap-r",{duration:1, autoAlpha:0, scale:8, transformOrigin: '50% 50%', ease:"Power4.easeOut"})
-    .from("#cap-k",{duration:1, autoAlpha:0, scale:8, transformOrigin: '50% 50%', ease:"Power4.easeOut"})
+    tl.from("#cap-r",{drawSVG:"0%", duration:0.75, transformOrigin:"center"})
+    .to("#cap-r",{duration:0.5, transformOrigin:"center", fill:"#DDBB40"})
     return tl;
 }
+
+function capkDraw (){
+    var tl = gsap.timeline();
+    tl.from("#cap-k",{drawSVG:"0%", duration:0.75, transformOrigin:"center"})
+    .to("#cap-k",{duration:0.5, transformOrigin:"center", fill:"#D0912C"})
+    return tl;
+}
+
 
 function firstnameMotion (){
     var tl = gsap.timeline();
@@ -45,9 +47,9 @@ function surnameMotion (){
 
 function scaleMotion (){
     var tl = gsap.timeline();
-    tl.to("#rk-logo",{duration:1, scale:1.5, transformOrigin:"50% 50%", yoyo:true})
-      .to("#rk-logo",{duration:1, scale:0.1, autoAlpha:0, transformOrigin:"50% 50%"})
-      .to("#rk-logo",{duration:1.5, scale:1, autoAlpha:2, transformOrigin:"50% 50%"})
+    tl.to("#rk-logo",{duration:0.5, scale:1.5, transformOrigin:"50% 50%", yoyo:true})
+      .to("#rk-logo",{duration:0.75, scale:0, autoAlpha:0, transformOrigin:"50% 50%"})
+      .to("#rk-logo",{duration:1, scale:1, autoAlpha:2, transformOrigin:"50% 50%"})
     return tl;
 }
 
@@ -56,7 +58,8 @@ function scaleMotion (){
 
 
 var mainTL = gsap.timeline();
-mainTL.add(initialMotion())
+mainTL.add(caprDraw())
+.add(capkDraw())
 .add(firstnameMotion(),"playTogether")
 .add(surnameMotion(),"playTogether")
 .add(scaleMotion())
