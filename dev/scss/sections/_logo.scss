@@ -5,12 +5,12 @@
 
     @include lg{
         grid-template-columns:auto 650px auto;
-        margin-top: -75px;
+        margin-top: -25px;
     }
 
     @include md{
         grid-template-columns:auto 650px auto;
-        margin-top: -50px;
+        margin-top: -25px;
     }
 
     >div{
