@@ -72,9 +72,6 @@ function trianglecircleMotion(){
 
 
 
-
-
-
 var mainTL = gsap.timeline();
 mainTL.add(arrowMotion(),"playTogether")
 .add(rectangleMotion(),"playTogether")
