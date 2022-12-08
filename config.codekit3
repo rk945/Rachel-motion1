@@ -267,9 +267,9 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_logo.css",
-      "oF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 3,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
