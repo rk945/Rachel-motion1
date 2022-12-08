@@ -7,15 +7,15 @@ gsap.registerPlugin(DrawSVGPlugin, GSDevTools);
 
 function caprDraw (){
     var tl = gsap.timeline();
-    tl.from("#cap-r",{drawSVG:"0%", duration:0.75, transformOrigin:"center"})
-    .to("#cap-r",{duration:0.5, transformOrigin:"center", fill:"#DDBB40"})
+    tl.from("#cap-r",{drawSVG:"0%", duration:0.85, transformOrigin:"center"})
+    .to("#cap-r",{delay:0.25,duration:0.25, transformOrigin:"center", fill:"#DDBB40"})
     return tl;
 }
 
 function capkDraw (){
     var tl = gsap.timeline();
-    tl.from("#cap-k",{drawSVG:"0%", duration:0.75, transformOrigin:"center"})
-    .to("#cap-k",{duration:0.5, transformOrigin:"center", fill:"#D0912C"})
+    tl.from("#cap-k",{drawSVG:"0%", duration:0.85, transformOrigin:"center"})
+    .to("#cap-k",{delay:0.25,duration:0.25, transformOrigin:"center", fill:"#D0912C"})
     return tl;
 }
 
