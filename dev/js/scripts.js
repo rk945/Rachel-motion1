@@ -8,11 +8,17 @@ import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 gsap.registerPlugin(DrawSVGPlugin, GSDevTools, MorphSVGPlugin);
 MorphSVGPlugin.convertToPath("circle, rect");
 
+function bigwDraw (){
+  var tl = gsap.timeline();
+  tl.from("#big-w",{drawSVG:"0%", duration:0.85, transformOrigin:"center"})
+  .to("#big-w",{delay:0.25,duration:0.25, transformOrigin:"center", fill:"#BF5E28"})
+  return tl;
+}
+
 
 function slideMotion(){
   var tl = gsap.timeline();
-  tl.from("#big-w",{scale:0, duration:1, stagger:0.5, x: 300, drawSVG: 0})
-  .from("#group",{duration:1, scale:0, y:150, stagger:0.5, transformOrigin:"group"},"-=50%")
+  tl.from("#text",{duration:1, scale:0, y:150, stagger:0.5, transformOrigin:"group"},"-=50%")
 return tl;
 }
 
@@ -29,5 +35,6 @@ function scaleMotion (){
 
 var mainTL = gsap.timeline();
 mainTL.add(slideMotion())
+.add(bigwDraw())
 .add(scaleMotion())
 GSDevTools.create();
