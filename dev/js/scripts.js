@@ -2,39 +2,46 @@ import { gsap } from "gsap";
 
 
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
+import { CustomEase} from "gsap/CustomEase";
 import { GSDevTools } from "gsap/GSDevTools";
-import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 
-gsap.registerPlugin(DrawSVGPlugin, GSDevTools, MorphSVGPlugin);
-MorphSVGPlugin.convertToPath("circle, rect");
+
+gsap.registerPlugin(DrawSVGPlugin, GSDevTools, CustomEase);
+
 
 function bigwDraw (){
   var tl = gsap.timeline();
   tl.from("#big-w",{drawSVG:"0%", duration:0.85, transformOrigin:"center"})
-  .to("#big-w",{delay:0.25,duration:0.25, transformOrigin:"center", fill:"#BF5E28"})
+  .to("#big-w",{delay:0.25, duration:0.5, transformOrigin:"center", fill:"#005053"})
   return tl;
 }
 
 
 function slideMotion(){
   var tl = gsap.timeline();
-  tl.from("#text",{duration:1, scale:0, y:150, stagger:0.5, transformOrigin:"group"},"-=50%")
+  tl.from("#a",{duration:0.75, scale:0, x:150, stagger:0.5, transformOrigin:"a"},"-=50%")
+  tl.from("#g",{duration:0.75, scale:0, x:150, stagger:0.5, transformOrigin:"g"},"-=50%")
+  tl.from("#n",{duration:0.75, scale:0, y:-150, stagger:0.5, transformOrigin:"n", ease:"bounce.inOut"},"-=50%")
+  tl.from("#e",{duration:0.75, scale:0, y:-150, stagger:0.5, transformOrigin:"e", ease:"bounce.inOut"},"-=50%")
+  tl.from("#r",{duration:0.75, scale:0, y:150, stagger:0.5, transformOrigin:"r", ease:"elastic.out"})
+  tl.from("#text",{duration:0.5, scale:0, z:0, rotate:360, stagger:0.5, transformOrigin:"text"},"-=50%")
 return tl;
 }
 
 function scaleMotion (){
   var tl = gsap.timeline();
-  tl.to("#wagner-logo",{duration:0.5, scale:1.5, transformOrigin:"25% 25%", yoyo:true})
-    .to("#wagner-logo",{duration:0.5, scale:0.1, autoAlpha:0, transformOrigin:"25% 25%"})
-    .to("#wagner-logo",{duration:0.75, scale:1, autoAlpha:2, transformOrigin:"25% 25%"})
+  tl.to("#wagner-logo",{duration:0.5, scale:1.5, transformOrigin:"50% 50%", yoyo:true})
+    .to("#wagner-logo",{duration:0.5, scale:0.1, autoAlpha:0, transformOrigin:"50% 50%"})
+    .to("#wagner-logo",{duration:0.75, scale:1, autoAlpha:2, transformOrigin:"50% 50%"})
   return tl;
 }
 
 
 
-
 var mainTL = gsap.timeline();
-mainTL.add(slideMotion())
-.add(bigwDraw())
+mainTL.add(bigwDraw())
+.add(slideMotion())
 .add(scaleMotion())
+
+
 GSDevTools.create();

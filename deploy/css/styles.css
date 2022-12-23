@@ -378,13 +378,13 @@ textarea {
 ============= */
 #wagner-logo-container {
   display: grid;
-  margin-top: 175px;
+  margin-top: 150px;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". logo .";
 }
 @media (min-width: 1024px) {
   #wagner-logo-container {
-    grid-template-columns: auto 750px auto;
+    grid-template-columns: auto 650px auto;
   }
 }
 #wagner-logo-container > div {
